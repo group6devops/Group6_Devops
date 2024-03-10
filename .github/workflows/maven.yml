@@ -15,6 +15,23 @@ on:
     branches: [ "master" ]
 
 jobs:
+  checkstyle:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+ 
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+ 
+      - name: Run Checkstyle
+        run: |
+          ./mvnw checkstyle:check
+          
   build:
 
     runs-on: ubuntu-latest
