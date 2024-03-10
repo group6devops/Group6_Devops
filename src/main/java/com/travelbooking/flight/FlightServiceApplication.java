@@ -1,5 +1,5 @@
 /**
-* Provides FlightServiceApplication.java
+* Provides FlightServiceApplication.java 
 */
 package com.travelbooking.flight;
 
