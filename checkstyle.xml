@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
         <module name="Indentation"/>
-        [11:57] AMOD KUMAR MISHRA .
-<module name="Checker">
+
+        <module name="Checker">
 
     <!-- Other Checkstyle configurations -->
 
