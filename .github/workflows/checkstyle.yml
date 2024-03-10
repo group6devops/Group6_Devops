@@ -3,7 +3,7 @@ name: Checkstyle
 on:
   push:
     branches:
-      - main
+      - master
  
 jobs:
   checkstyle:
