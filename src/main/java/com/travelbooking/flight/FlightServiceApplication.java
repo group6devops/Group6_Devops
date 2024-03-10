@@ -1,3 +1,6 @@
+/**
+* Provides FlightServiceApplication.java
+*/
 package com.travelbooking.flight;
 
 import org.springframework.boot.SpringApplication;
