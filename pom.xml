@@ -57,17 +57,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!--
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.1.2</version>
-					<id>validate</id>
-					<phase>validate</phase>
-					<configuration><configLocation>checkstyle.xml</configLocation><!-- Other configuration options if needed --></configuration>
-					<goals><goal>check</goal></goals>
-			</plugin>
-			-->
 		</plugins>
 	</build>
 
