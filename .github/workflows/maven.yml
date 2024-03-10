@@ -59,7 +59,7 @@ jobs:
     - name: Build with Maven and run tests
       run: mvn clean test
       
-    sonarcloud:
+  sonarcloud:
      runs-on: ubuntu-latest
      steps:
         - uses: actions/checkout@v3
