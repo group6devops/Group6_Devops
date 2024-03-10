@@ -4,6 +4,7 @@
 <module name="Checker">
 <module name="TreeWalker">
 <module name="AvoidStarImport">
+<module name="Indentation">
 <property name="severity" value="error" />
 </module>
 </module>
