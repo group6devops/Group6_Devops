@@ -59,11 +59,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<settings>
-	<pluginGroups>
-		<pluginGroup>
-      			org.sonarsource.scanner.maven
-		</pluginGroup>
-	</pluginGroups>
-</settings>
 </project>
