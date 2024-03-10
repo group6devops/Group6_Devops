@@ -29,7 +29,6 @@ jobs:
           java-version: '11'
  
       - name: Run Checkstyle
-        checkstyle_config: checkstyle.xml
         run: mvn checkstyle:check
           
   build:
