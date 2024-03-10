@@ -29,8 +29,7 @@ jobs:
           java-version: '11'
  
       - name: Run Checkstyle
-        run: |
-          ./mvnw checkstyle:check
+        run: mvn checkstyle:check
           
   build:
 
