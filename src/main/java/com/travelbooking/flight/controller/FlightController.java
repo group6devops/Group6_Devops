@@ -7,18 +7,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.travelbooking.flight.entity.Flight;
 import com.travelbooking.flight.service.FlightService;
 
 
 @RestController
 @RequestMapping("/flights")
-public class FlightController {
-	
+public class FlightController {	
 	@Autowired
-	private FlightService flightService;
-	
+	private FlightService flightService;	
     @PostMapping("/")
     public Flight saveFlifgt(@RequestBody Flight flight) {
         System.out.println("POST");
