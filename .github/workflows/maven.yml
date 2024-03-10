@@ -62,15 +62,19 @@ jobs:
   sonarcloud:
      runs-on: ubuntu-latest
      steps:
-        - uses: actions/checkout@v3
-          with:
-            fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-        - name: SonarCloud Scan
-          run: mvn clean verify -P sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=group6devops -Dsonar.login=$SONAR_TOKEN
+     - uses: actions/checkout@v3
+     - name: Set up JDK 17
+       uses: actions/setup-java@v3
+       with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+     - name: Build with SonarCloud
+       run: mvn clean verify -P sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=group6devops -Dsonar.login=$SONAR_TOKEN
           #run: mvn -B verify sonar:sonar -Dsonar.projectKey=group6devops_Group6_Devops -Dsonar.organization=group6devops -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
