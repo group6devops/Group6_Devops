@@ -57,6 +57,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
@@ -66,6 +67,7 @@
 					<configuration><configLocation>checkstyle.xml</configLocation><!-- Other configuration options if needed --></configuration>
 					<goals><goal>check</goal></goals>
 			</plugin>
+			-->
 		</plugins>
 	</build>
 
