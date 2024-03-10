@@ -36,7 +36,7 @@ class FlightControllerTest {
  
     @Test
     void saveFlight() throws Exception {
-        Flight flight = new Flight(Integer.toString(0), null, null, null, null);
+        Flight flight = new Flight(0l, null, null, null, null);
  
         flight.setFlightId(1l);
         flight.setFlightDestination("flightDestination");
