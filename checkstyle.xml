@@ -1,6 +1,34 @@
 <?xml version="1.0"?>
 
         <module name="Indentation"/>
+        [11:57] AMOD KUMAR MISHRA .
+<module name="Checker">
+
+    <!-- Other Checkstyle configurations -->
+
+    <module name="TreeWalker">
+
+        <module name="JavadocPackage">
+
+            <!-- Configure JavadocPackage as needed -->
+
+        </module>
+ 
+        <!-- Suppress Missing package-info.java file for a specific package -->
+
+        <module name="RegexpSingleline">
+
+            <property name="format" value=".*excludedpackage.*"/>
+
+            <property name="message" value="Checkstyle suppressed for excluded package"/>
+
+        </module>
+ 
+        <!-- Other Checkstyle modules and configurations -->
+
+    </module>
+
+</module>
 
         <!-- Add more modules and configurations as needed -->
 
