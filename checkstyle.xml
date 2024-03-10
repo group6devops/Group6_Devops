@@ -1,37 +1,20 @@
 <?xml version="1.0"?>
-
-        <module name="Indentation"/>
-
-        <module name="Checker">
-
-    <!-- Other Checkstyle configurations -->
-
+<module name="Checker">
+<!-- Other Checkstyle configurations -->
+ 
     <module name="TreeWalker">
-
-        <module name="JavadocPackage">
-
-            <!-- Configure JavadocPackage as needed -->
-
-        </module>
+<module name="JavadocPackage">
+<property name="allowedJavadocTags" value="todo, FIXME"/>
+<!-- Configure other JavadocPackage rules as needed -->
+</module>
  
         <!-- Suppress Missing package-info.java file for a specific package -->
-
-        <module name="RegexpSingleline">
-
-            <property name="format" value=".*excludedpackage.*"/>
-
-            <property name="message" value="Checkstyle suppressed for excluded package"/>
-
-        </module>
+<module name="SuppressWithNearbyCommentFilter">
+<property name="checks" value="JavadocPackage"/>
+<property name="commentFormat" value="CHECKSTYLE:OFF"/>
+<property name="commentNearCheck" value="true"/>
+</module>
  
         <!-- Other Checkstyle modules and configurations -->
-
-    </module>
-
 </module>
-
-        <!-- Add more modules and configurations as needed -->
-
-    </module>
-
 </module>
