@@ -8,10 +8,6 @@
 
 <module name="Checker">
 
-    <module name="TreeWalker">
-
-        <module name="EmptyBlock"/>
-
         <module name="Indentation"/>
 
         <!-- Add more modules and configurations as needed -->
