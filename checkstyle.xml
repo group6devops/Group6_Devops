@@ -6,8 +6,6 @@
 
         "http://checkstyle.sourceforge.net/dtds/configuration_1_3.dtd">
 
-<module name="Checker">
-
         <module name="Indentation"/>
 
         <!-- Add more modules and configurations as needed -->
